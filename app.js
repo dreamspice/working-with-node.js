@@ -3,10 +3,13 @@ const path = require('path');
 
 const bodyParser = require('body-parser');
 const rootDir = require('./helpers/path');
+const handleBars = require('express-handlebars');
 
 const app = express();
 
-app.set('view engine', 'pug');
+app.engine('hbs', handleBars());
+app.set('view engine', 'hbs');
+app.set('views', 'views');
 
 const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
