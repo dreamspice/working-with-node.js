@@ -34,3 +34,10 @@ main {
   padding: 1rem;
   text-align: center;
 }
+
+.card.product-item {
+  border: 2px solid red;
+  width: 30%;
+  margin: auto;
+  padding: 2rem 0;
+}
