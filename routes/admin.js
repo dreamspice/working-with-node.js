@@ -12,6 +12,7 @@ router.get('/add-product', (req, res, next) => {
   res.render('add-product', {
     docTitle: 'Add product',
     path: '/admin/add-product',
+    activeAdmin: true,
   });
 });
 
